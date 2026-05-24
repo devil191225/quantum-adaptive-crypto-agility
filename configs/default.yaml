@@ -1,0 +1,3 @@
+# Default Config-Lab parameters (extend in later tasks).
+seed: 42
+output_dir: results

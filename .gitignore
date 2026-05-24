@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
+
+# Results / Data
+# We ignore the raw generated results because they are reproducible.
+# We KEEP the figures and tables so reviewers can see them without running code.
+results/*
+!results/figures/
+!results/tables/
+results/figures/*.png
+results/figures/*.pdf
+results/tables/*.csv
+results/tables/*.md
+!results/figures/.gitkeep
+!results/tables/.gitkeep
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
+# Cursor AI
+.cursor/
+.cursorignore
+
+# Manuscript files
+paper/
+
+scripts/check_manuscript_placeholders.py
+scripts/count_abstract_words.py
+scripts/sr_manuscript_audit.py
+scripts/generate_paper_figures.py
