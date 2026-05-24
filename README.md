@@ -7,7 +7,7 @@ This code supports the manuscript:
 
 ## Overview
 
-Post-quantum migration is a continuous control problem over cryptographic infrastructure as primitives, threat assumptions, and operational constraints evolve—not a one-time algorithm swap. `Config-Lab` provides:
+Post-quantum migration is a continuous control problem over cryptographic infrastructure as primitives, threat assumptions, and operational constraints evolve, not a one-time algorithm swap. `Config-Lab` provides:
 
 - A formal crypto-configuration model.
 - Post-quantum-relevant fragility predicates.
