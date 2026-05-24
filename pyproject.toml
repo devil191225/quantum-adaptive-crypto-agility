@@ -8,8 +8,8 @@ version = "0.1.0"
 description = "Config-Lab: synthetic quantum-adaptive crypto-agility simulator (research PoC)"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "Proprietary" }
-authors = [{ name = "Research lead" }]
+license = { text = "MIT" }
+authors = [{ name = "Aditya Srikar Konduri" }]
 dependencies = [
     "matplotlib>=3.7",
     "networkx>=3.0",

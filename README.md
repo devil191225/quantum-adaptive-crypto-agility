@@ -59,11 +59,29 @@ python -m qaca.experiments --scenario static_migration --seed 7 --template rando
 
 - `configs/`: YAML configuration files for scenarios.
 - `src/qaca/`: Core framework source code (models, threat, predicates, risk, planner, simulator).
-- `scripts/`: Scripts for reproducing results and generating figures.
-- `paper/`: Manuscript source files (LaTeX) and figures.
-- `results/`: Generated tables and figures from experiments.
+- `scripts/`: Scripts for reproducing results (`reproduce_all.py`).
 - `tests/`: Unit tests for the framework.
+
+Running `python scripts/reproduce_all.py` writes generated artifacts under `results/` (not tracked in Git).
+
+The manuscript (LaTeX, figures for Overleaf) is kept locally under `paper/` and is not part of this repository.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
+
+## Archiving for the paper (Zenodo)
+
+*Scientific Reports* expects a **Data Availability** / **Code Availability** statement with a stable link to your code. This GitHub repo is that link:
+
+https://github.com/devil191225/quantum-adaptive-crypto-agility
+
+**Zenodo** is optional but recommended: it mints a **DOI** for a specific GitHub release so reviewers and readers have a permanent archive even if the repo changes later.
+
+1. Sign in at [zenodo.org](https://zenodo.org) with your GitHub account.
+2. Enable the Zenodo GitHub integration and select this repository.
+3. On GitHub, create a **Release** (e.g. `v0.1.0`) after your final `reproduce_all.py` run.
+4. Zenodo will build an archive and give you a DOI (e.g. `10.5281/zenodo.xxxxxx`).
+5. Put that DOI in the manuscript’s Data/Code Availability sections, plus the release tag and commit hash.
+
+If you have not archived yet at submission time, you can write: *An archival DOI will be provided upon acceptance.*
